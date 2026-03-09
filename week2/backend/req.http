@@ -1,0 +1,34 @@
+### read all users
+GET http://localhost:3000/products
+
+
+### read a user by id
+GET http://localhost:3000/products/"hp"
+
+
+###create new user
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "pid":2,
+    "name":"computer",
+    "brand":"hp",
+    "price":60000
+}
+
+
+###update a user
+PUT http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "pid":1,
+    "name":"phone",
+    "brand":"samsung",
+    "price":30000
+}
+
+
+###delete a user by id
+DELETE http://localhost:3000/products/1
