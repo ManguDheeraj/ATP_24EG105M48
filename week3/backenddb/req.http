@@ -1,0 +1,79 @@
+### Raed All suers
+GET http://localhost:4000/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1ZmZ5QGdtYWlsLmNvbSIsImlhdCI6MTc3Mjg3ODI5NSwiZXhwIjoxNzcyODc4MzI1fQ.ghNIiB8RhDtGymHWubN0ljwfxoXajvew6-sRuCJwn60; Path=/; HttpOnly; SameSite=Lax
+### Read user by id
+GET http://localhost:4000/user-api/user
+
+
+
+### Create new user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"luffy",
+    "password":"sword",
+    "email":"luffy@gmail.com",
+    "age":20
+}
+
+
+###Update the existing user
+PUT  http://localhost:4000/user-api/users/69abe18984131f4c3c3ccc38
+Content-Type: application/json
+
+{
+    "username":"zoro",
+    "password":"zoro",
+    "email":"zoroo@gmail.com",
+    "age":20
+}
+
+### User login
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "email":"luffy@gmail.com",
+    "password":"sword"
+}
+
+### add product to user cart
+PUT http://localhost:4000/user-api/cart/product-id/69b24711f05e4c43138e0855
+
+
+### Delete the existing user
+DELETE http://localhost:4000/user-api/users/69aa8c5065bb2cef1d2e682c
+
+
+### reading all the products
+GET http://localhost:4000/product-api/products
+
+### adding a new product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":2,
+    "productName":"laptop",
+    "price":45800,
+    "brand":"hp"   
+}
+
+### read all product by productId
+GET http://localhost:4000/product-api/products/2
+
+
+### updating a product
+PUT http://localhost:4000/product-api/products/2
+Content-Type: application/json
+
+{
+    "productId":2,
+    "productName":"mobile",
+    "price":45000,
+    "brand":"redmi"
+}
+
+### deleteing an existing product by id
+DELETE http://localhost:4000/product-api/products/2
