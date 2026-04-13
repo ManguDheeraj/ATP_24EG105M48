@@ -1,0 +1,26 @@
+###
+POST http://localhost:4000/emp-api/emp
+Content-Type: application/json
+
+{
+    "name":"emp2",
+    "email":"emp2@gmail.com",
+    "mobile":"9391472578",
+    "designation":"mtech",
+    "company":"tcs"
+}
+### read all emp
+GET http://localhost:4000/emp-api/emp
+
+###edit
+PUT http://localhost:4000/emp-api/emp/69ca24efc2c074389735d155
+Content-Type: application/json
+
+{
+    "name":"emp1",
+    "mobile":"123456789"
+}
+
+
+###delete
+DELETE http://localhost:4000/emp-api/emp/69ca173f63863cf93aa7d4c6
