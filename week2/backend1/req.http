@@ -1,0 +1,63 @@
+### Raed All suers
+GET http://localhost:3000/users
+
+### Read user by id
+GET http://localhost:3000/users/3
+
+### Create new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id":4,
+    "name":"Delta",
+    "age":24
+}
+
+
+###Update the existing user
+PUT  http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id":4,
+    "name":"Luffy",
+    "age":18
+}
+
+
+### Delete the existing user
+DELETE http://localhost:3000/users/3
+
+
+### reading all the products
+GET http://localhost:3000/products
+
+### adding a new product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "productId":4,
+    "name":"pen",
+    "brand":"camlin",
+    "price":5
+}
+
+### read all product by brand
+GET http://localhost:3000/products/camlin
+
+
+### updating a product
+PUT http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "productId":2,
+    "name":"eraser",
+    "brand":"apsara",
+    "price":3
+}
+
+### deleteing an existing product by id
+DELETE http://localhost:3000/products/4
