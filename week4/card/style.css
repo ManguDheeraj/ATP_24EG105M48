@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.card{
+    width: 500px;
+    margin: auto;
+    box-shadow: 1px 2px 40px red;
+    margin-top: 200px;
+    border-radius: 15px;
+    text-align: center;
+}
+img{
+    width: 50%;
+margin-bottom: 15px;
+border-radius: 50%;
+
+}
+h2{
+    margin-bottom: 10px;
+    color: maroon;
+}
+p{
+    margin-bottom: 15px;
+    color: darkred;
+}
+button{
+    border:none;
+    border-radius: 20px;
+    background-color: red;
+    margin-bottom: 5px;
+}

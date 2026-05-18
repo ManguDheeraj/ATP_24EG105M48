@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    width: 350px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: rgb(242, 223, 176);
+    border-radius: 40px;
+    text-align: center;
+}
+div{
+    margin-bottom: 20px;
+}
+label{
+    color: maroon;
+}
+#password{
+    padding: 7px;
+    border-radius: 10px;
+}
+#username{
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 10px;
+}
+button{
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}

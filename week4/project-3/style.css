@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    color: brown;
+}
+ol{
+    text-align: center;
+}
+.hyd{
+    text-align: center;
+    color:chocolate;
+}
+img{
+    width: 500px;
+    height: 300px;
+    border-radius: 50%;
+}
